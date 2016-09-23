@@ -1,0 +1,33 @@
+# Copyright (C) 2016 Add Target Fixer
+# This file is distributed under the same license as the Add Target Fixer package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Add Target Fixer 0.0.03\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/add-target-fixer\n"
+"POT-Creation-Date: 2016-09-23 23:35:10+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#. Plugin Name of the plugin/theme
+msgid "Add Target Fixer"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.shortdark.net/wordpress-plugin/add-target-fixer/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Fixes the security issue with target=\"_blank\""
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Neil Ludlow"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.shortdark.net/"
+msgstr ""
