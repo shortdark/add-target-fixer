@@ -1,7 +1,7 @@
 <?php
 /**
  * @package add-target-fixer
- * @version 0.0.03
+ * @version 0.0.04
  */
 /*
  * Plugin Name: Add Target Fixer
@@ -9,7 +9,7 @@
  * Description: Fixes the security issue with target="_blank"
  * Author: Neil Ludlow
  * Text Domain: add-target-fixer
- * Version: 0.0.03
+ * Version: 0.0.04
  * Author URI: http://www.shortdark.net/
  */
 
@@ -41,13 +41,11 @@ define('SDATF__PLUGIN_DIR', plugin_dir_path(__FILE__));
  **********************/
 
 // This assembles the plugin page.
-function sdatf_add_target_fixer($content) {
-	
+function sdatf_add_target_fixer($content)
+{
 	$pattern = '/< *a *([\w\s\d\/.?#,;@()&+%=:"~\[\]\-\']*) *target *= *["\']+([\w]*)["\']+ *([\w\s\d\/.?#,;@()&+%=:"~\[\]\-\']*)>/i';
 	$replace_with = '<a $1 target=\'$2\' rel=\'noopener noreferrer\' $3>';
-	$content = preg_replace($pattern, $replace_with, $content);
-
-	return $content;
+	return preg_replace($pattern, $replace_with, $content);
 }
 
 // Filter the content.
@@ -57,9 +55,10 @@ add_filter('the_content', 'sdatf_add_target_fixer');
  ** LOAD PLUGIN TEXT DOMAIN
  ****************************/
 
-function sdatf_load_textdomain() {
+function sdatf_load_textdomain()
+{
 	load_plugin_textdomain('add-target-fixer', false, dirname(plugin_basename(__FILE__)) . '/languages');
 }
 
 add_action('init', 'sdatf_load_textdomain');
-?>
+
